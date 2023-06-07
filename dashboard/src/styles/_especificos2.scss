@@ -1,0 +1,136 @@
+.loading-success{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 999999999;
+    inset: 0;
+}
+
+.content_img{
+    img{
+        display: block;
+        width: 120px;
+        margin: 0 auto;
+    }
+}
+
+.content_double{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_double2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content_double3{
+    display: flex;
+    justify-content: center;
+}
+
+.div_content2{
+    padding-right: 20px;
+}
+
+.img-thumbnail {
+    height: 80%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.content_double .card{
+    height: 250px;
+    position: relative;
+}
+
+.card-body{
+    height: 100%;
+}
+
+.btn-openImage{
+    height: 100%;
+    svg{
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        padding: 50px;
+    }
+}
+
+.form-control6{
+    width: 100%;
+    padding: 3px;
+}
+
+#icon-cerrar{
+    display: block !important;
+    overflow: hidden !important;
+    height: 48px !important;
+}
+
+.jodit-status-bar-link{
+    display: none;
+}
+.dot-spinner4{
+    margin: 0 auto;
+}
+
+
+
+.welcome{
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #C5956C;
+    background: radial-gradient(circle, #C5956C 0%, #236CA6 14%);
+    background-position: center;
+    animation: fade 1200ms linear 300ms forwards, zoom 1500ms ease-out 1300ms forwards, infade 500ms ease-out 3000ms forwards;
+    height: 100vh;
+}
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+.welcome h1{
+    font-family: 'Satisfy', cursive;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, #C5956C 64%, #236CA6 100%);
+    background-position: left;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 500%;
+    font-size: 70px;
+    user-select: none;
+    opacity: 0;
+    animation: fade 500ms linear 2000ms forwards, text_color 2000ms infinite 3200ms alternate;
+}
+
+@keyframes fade {
+    from{opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes zoom {
+    from{ background-size: 100%;}
+    to {background-size: 1600%;}
+}
+@keyframes infade {
+
+    to{
+        background: radial-gradient(circle, rgba(99,179,48,0) 0%, rgba(46,93,167,0) 14%);
+    }
+}
+
+
+@keyframes text_color {
+    from{
+        background-position: center;
+    }
+
+    to{
+
+        background-size: 700%;
+        background-position: right;
+        
+    }
+}
